@@ -1,0 +1,72 @@
+var x = 230;
+var y = 220;
+var y2=220;
+var y3=220;
+var y4=220;
+var y5=220;
+var y6=220;
+var r =10;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(0);
+  noStroke();
+
+  // draw pipe
+  fill(10,255,20);
+  rect(0, 200, x, 20);
+
+  // draw drip
+  fill(255);
+  ellipse(x, y, r);
+  ellipse(x, y2, r);
+  ellipse(x, y3, r);
+  ellipse(x, y4, r);
+  ellipse(x, y5, r);
+  ellipse(x, y6, r);
+  // down 3 pixels each frame, but maybe should be accelerating?
+  y = y +2;
+  y2= y2+2;
+  y3= y3+2;
+  y4= y4+2;
+  y5= y5+2;
+  y6= y6+2;
+
+  // if invisible for a full “height” amount…
+  if (y >height+5) {
+    // reset
+    y =220;
+  }
+  
+  if(y>y+10){
+    y=y+5
+  }
+  
+  // if the drip at some point, it will turn back.
+  if(y2>height+10){
+    y2=220;
+  }
+  
+   // if the drip at some point, it will turn back.
+  if(y3>height+15){
+    y3=220;
+  }
+  
+  // if the drip at some point, it will turn back.
+  if(y4>height+20){
+    y4=220;
+  }
+  
+   // if the drip at some point, it will turn back.
+  if(y5>height+25){
+    y5=220;
+  }
+  
+   // if the drip at some point, it will turn back.
+  if(y6>height+30){
+    y6=220;
+  }
+}

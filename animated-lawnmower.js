@@ -6,7 +6,7 @@ function setup() {
 var x = 0;
 var h = 10;
 var value=255;
-var x1= 390;
+var x1= 400;
 
 function draw() {
   stroke(random(60, 70), 100, 90);
@@ -23,15 +23,13 @@ function draw() {
   fill(40, 100, 60);
   rect(0, height-10, width, 10);
   
-  if (mouseIsPressed) {
-    fill(255);
-    rect(x1, 0, width, height-10);
-      h=10
-    	  if(x1<400){
-    	    x1-=5;
-          }
-    	  if(x1<=-10){
-    	    x1=399;
-          }
-  }
+  fill(255);
+  rect(x1, 0, width, height-10); 
+    if(x1<=400){
+    	x1-=2;
+      }
+    if(x1<=-1400){
+    	x1=400;
+      h=10;
+      }
 }

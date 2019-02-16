@@ -5,7 +5,6 @@ function setup() {
 
 var x = 0;
 var h = 10;
-var value=255;
 
 function draw() {
   stroke(random(60, 70), 100, 90);

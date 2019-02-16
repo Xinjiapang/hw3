@@ -26,12 +26,12 @@ function draw() {
   if (mouseIsPressed) {
     fill(255);
     rect(x1, 0, width, height-10);
-    h=10
-    	if(x1<400){
-    	x1-=5;
-      }
-    	if(x1<=-10){
-    	x1=399;
-      }
+      h=10
+        if(x1<400){
+        x1-=5;
+        }
+        if(x1<=-10){
+        x1=399;
+        }
   }
 }

@@ -5,7 +5,7 @@
 3. What's the point of the h variable?
   the point of the H variable is to control the heigh of the blades.
 4. What does the -10 do in the second and fourth arguments of the line function, height-10-random(h)? Why is it there?
-  Height-10 is to set the root of the blades at the rectangle. The height-10-random(h) is to set the top of one blade heighter 5. than the root of the blades, which makes the blades look like are growing.
+  Height-10 is to set the root of the blades at the rectangle. The height-10-random(h) is to set the top of one blade heighter than the root of the blades, which makes the blades look like are growing.
 
 
 1. What's the point of an object?
